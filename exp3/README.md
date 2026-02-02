@@ -28,7 +28,8 @@ React Router is a popular library used to handle client-side routing in React ap
 
 ### ✅ Output
 Basic routing between pages/components using React Router.
-<img width="1913" height="877" alt="image" src="https://github.com/user-attachments/assets/b0bee1fc-8c7c-4d0d-a559-421e82753295" />
+<img width="1906" height="932" alt="image" src="https://github.com/user-attachments/assets/5648c25d-d32d-40c5-87f1-e7d2cebb229e" />
+
 
 
 ---
