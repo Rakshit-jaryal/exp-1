@@ -40,3 +40,9 @@
 .read-the-docs {
   color: #888;
 }
+.profile-photo {
+  max-width: 400px;  /* Adjust this value to your liking */
+  height: auto;      /* Keeps the aspect ratio perfect */
+  display: block;
+  margin-top: 20px;
+}
