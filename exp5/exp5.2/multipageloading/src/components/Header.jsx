@@ -8,7 +8,7 @@ export default function Header() {
       <Link to="/" className="header-link">
         <div className="brand">
           <img src={danceGif} alt="logo" className="brand-gif" />
-          <span>Experiment 3.2</span>
+          <span>Experiment 5.2</span>
         </div>
       </Link>
     </header>
