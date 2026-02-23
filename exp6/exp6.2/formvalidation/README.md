@@ -66,4 +66,4 @@ The form successfully validates user inputs on the client side. It displays erro
 
 ![alt text](image-1.png)
 
-![alt text](image-2.png)
+![alt text](image-3.png)
