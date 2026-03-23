@@ -1,59 +1,61 @@
-EXP 8 – Student Record Management REST API
+EXP 8 – Student Management REST API
 
-This experiment demonstrates the development of a RESTful backend service using Spring Boot to manage student information. The application performs complete CRUD (Create, Read, Update, Delete) operations and stores data in a MySQL database using Spring Data JPA.
+This experiment implements a Student Management REST API using Spring Boot. The application allows users to perform CRUD operations (Create, Read, Update, Delete) on student records stored in a MySQL database using Spring Data JPA.
 
-Project Directory
+Project Folder
 
-The executable Spring Boot project is located inside the try directory.
+The runnable Spring Boot project is located in the try folder.
 
 Technologies Used
 Java 21
 Spring Boot
-Spring Web (REST API)
-Spring Data JPA (ORM)
-MySQL Database
+Spring Web
+Spring Data JPA
+MySQL
 Maven Wrapper
-Functionalities
-
-The application allows users to manage student records through REST endpoints. The main capabilities include:
-
-Adding a new student to the database
-Viewing all student records
-Retrieving details of a specific student using ID
-Modifying existing student information
-Removing student records from the system
-API Base Endpoint
+Features
+Create a new student record
+View all students
+View a student by ID
+Update student details
+Delete a student
+API Base URL
 http://localhost:8080/api/students
-Available REST Endpoints
-Method	Endpoint	Description
-GET	/api/students	Retrieve list of all students
-GET	/api/students/{id}	Fetch details of a particular student
-POST	/api/students	Insert a new student record
-PUT	/api/students/{id}	Update information of an existing student
-DELETE	/api/students/{id}	Remove a student record
-Database Configuration
-Create a MySQL database:
+API Endpoints
+GET /api/students – Get all students
+GET /api/students/{id} – Get a student by ID
+POST /api/students – Create a new student
+PUT /api/students/{id} – Update student details
+DELETE /api/students/{id} – Delete a student
+Database Setup
+
+Create the database in MySQL:
+
 CREATE DATABASE spring_hibernate_db;
-Open the configuration file:
+
+Then open:
+
 try/src/main/resources/application.properties
-Update the database credentials if necessary:
-spring.datasource.username=your_username
-spring.datasource.password=your_password
-Running the Application
 
-Navigate to the try folder and run the following command:
+Set your MySQL username and password if required.
 
-For Windows
+Run the Project
+
+Go to the try folder and run:
+
+Windows
+
 mvnw.cmd spring-boot:run
-For macOS/Linux
-./mvnw spring-boot:run
-Server Address
 
-Once the application starts successfully, the API will be available at:
+macOS/Linux
+
+./mvnw spring-boot:run
+
+The application will run at:
 
 http://localhost:8080
 
-You can test the endpoints using tools like Postman or cURL.
+You can test the API using tools like Postman.
 
 
 ![alt text](image.png)
