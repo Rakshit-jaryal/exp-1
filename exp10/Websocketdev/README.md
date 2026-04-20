@@ -142,8 +142,8 @@ This experiment helped in understanding:
 * Course: B.E. CSE (AI & ML)
 
 ---
-![alt text](<Screenshot 2026-04-20 103000.png>)
+![alt text](image-2.png)
 
-![alt text](<Screenshot 2026-04-20 102921.png>)
+![alt text](image.png)
 
-![alt text](<Screenshot 2026-04-20 102930.png>)
+![alt text](image-1.png)
