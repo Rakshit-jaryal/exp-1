@@ -1,69 +1,149 @@
-Experiment – 6.2
-Client-Side Form Validation Using React
-🎯 Aim
+# 💬 Real-Time Chat Application using WebSockets (Exp 10)
 
-To validate form inputs on the client side before submission using React.
+## 📌 Objective
 
-🛠 Software Requirements
+To develop a real-time chat application using WebSockets that allows multiple users to communicate instantly through text and voice messages.
 
-Node.js
+---
 
-React (Vite / Create React App)
+## 🧠 Description
 
-VS Code
+This project is a full-stack real-time chat application built using:
 
-Web Browser
+* **Frontend:** React (Vite)
+* **Backend:** Spring Boot (WebSocket + STOMP)
+* **Communication:** WebSockets for real-time messaging
 
-📖 Theory
+Users can join a chat room, send messages, and receive messages instantly without refreshing the page. The application also supports voice message recording and playback.
 
-Client-side validation is a technique used to validate user input in the browser before sending data to the server. It ensures that the entered data follows specific rules and constraints, providing immediate feedback without server interaction.
+---
 
-In this experiment, React’s useState hook is used to manage form data and error messages. When the user submits the form, validation conditions are checked for the Email and Password fields.
+## ⚙️ Technologies Used
 
-The email is validated to ensure it:
+### Frontend
 
-Contains the @ symbol
+* React.js
+* Vite
+* CSS (Custom UI Styling)
 
-Ends with .com, .in, or a valid country code
+### Backend
 
-Does not contain a dot (.) before @
+* Spring Boot
+* WebSocket (STOMP Protocol)
+* SockJS
 
-Is not empty
+---
 
-The password is validated to ensure it:
+## 🚀 Features
 
-Has at least 5 characters
+* 👥 Multi-user chat system
+* ⚡ Real-time messaging using WebSockets
+* 🎙 Voice message support
+* 🟢 Online user tracking
+* 💬 Clean and responsive UI
+* 🔁 Instant message broadcasting
 
-Starts with a capital letter
+---
 
-Contains at least one number
+## 🛠️ How to Run the Project
 
-Contains at least one special character
+### 1. Clone / Extract the Project
 
-Is not empty
+```bash
+git clone <repository-url>
+```
 
-If any condition is not satisfied, an appropriate error message is displayed and form submission is prevented.
+---
 
-⚙️ Procedure
+### 2. Run Backend (Spring Boot)
 
-Create a React application.
+Open terminal in backend folder:
 
-Create form inputs for Email and Password.
+```bash
+cd Websocketdev
+.\mvnw.cmd spring-boot:run
+```
 
-Use useState to store input values and error messages.
+Backend runs on:
 
-Define validation rules for both fields.
+```
+http://localhost:8080
+```
 
-Display error messages if validation fails.
+---
 
-Allow submission only when all conditions are satisfied.
+### 3. Run Frontend (React)
 
-✅ Result
+Open another terminal:
 
-The form successfully validates user inputs on the client side. It displays error messages for invalid inputs and allows submission only when all validation conditions are fulfilled.
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-![alt text](image.png)
+Frontend runs on:
 
-![alt text](image-1.png)
+```
+http://localhost:5173
+```
 
-![alt text](image-3.png)
+---
+
+## 🧪 Testing the Application
+
+1. Open the app in **two browser tabs**
+2. Enter different usernames
+3. Join the chat room
+4. Send messages from one tab
+5. Verify messages appear instantly in the other tab
+
+---
+
+## 📸 Output
+
+* Users successfully connected to chat room
+* Messages delivered in real-time
+* Voice messages recorded and played
+* Multiple users interacting simultaneously
+
+---
+
+## ✅ Result
+
+The real-time chat application was successfully implemented using WebSockets. Messages were transmitted instantly between multiple users without page reload, demonstrating efficient real-time communication.
+
+---
+
+## 📚 Conclusion
+
+This experiment helped in understanding:
+
+* WebSocket protocol and real-time communication
+* Integration of frontend and backend
+* STOMP messaging architecture
+* Handling multiple users in a chat system
+
+---
+
+## 🔮 Future Enhancements
+
+* Add emoji support 😏
+* Typing indicator feature
+* Private messaging
+* Database integration for message storage
+* Authentication system
+
+---
+
+## 👤 Author
+
+* Name: Rakshit
+* Course: B.E. CSE (AI & ML)
+
+---
+![alt text](<Screenshot 2026-04-20 103000.png>)
+
+![alt text](<Screenshot 2026-04-20 102921.png>)
+
+![alt text](<Screenshot 2026-04-20 102930.png>)
